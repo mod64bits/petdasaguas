@@ -1,0 +1,44 @@
+{% load static %}
+  <div class="menu-list-items">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <!-- menu logo -->
+                        <ul class="menu-logo">
+                           <li>
+                              <a href="#">
+                              <img id="logo_img" src="{% static 'home/images/logo.svg' %}" alt="logo">
+                              </a>
+                           </li>
+                        </ul>
+                        <ul class="menu-sidebar pull-right">
+                           <li>
+                              <a href="javascript:void(0)" data-toggle="modal" data-target=".iq-login-from" data-whatever="@mdo"><i class="fa fa-user"></i></a>
+                           </li>
+                           <li class="iq-share">
+                              <div class="slideouticons">
+                                 <input type="checkbox" id="togglebox">
+                                 <label for="togglebox" class="mainlabel"><i class="fa fa-share-alt"></i></label>
+                                 <div class="iconswrapper">
+                                    <ul>
+                                       <li><a href="javascript:void(0)"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+                                       <li><a href="javascript:void(0)"><i class="fa fa-twitter"  aria-hidden="true"></i></a></li>
+                                       <li><a href="javascript:void(0)"><i class="fa fa-google-plus" title="Google Plus"></i></a></li>
+                                       <li><a href="javascript:void(0)"><i class="fa fa-pinterest-p" title="Pinterest"></i></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                        <!-- menu links -->
+                        <ul class="menu-links">
+                           <li><a href="#iq-home">Home</a></li>
+                           <li><a href="#iq-about">Quem Somos</a></li>
+                           <li><a href="#iq-services">Adoção</a></li>
+                           <li><a href="#iq-team">Doar</a></li>
+                           <li><a href="#iq-contact">Contato</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>

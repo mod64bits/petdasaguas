@@ -1,0 +1,91 @@
+{% extends 'home/ListaPetBase.html' %}
+{% load static %}
+{% load thumbnail %}
+
+{% block pet%}
+     <section class="overview-block-pt me-about wrapper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12 text-center iq-mtb-15">
+                        <div class="iq-plr-30 iq-pt-30 grey-bg">
+                            {% thumbnail object.fotoPerfil "365x535" crop="center" as im %}
+                            <img class="img-fluid" src="{{ im.url }}" alt="logo">
+                            {% endthumbnail %}
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 iq-mtb-15">
+                        <div id="boxscroll" class="iq-home about-us">
+                            <div class="home-deta">
+                                <div class="content-deta">
+                                    <div class="main-title">
+                                        <small>Sugerir Nome</small>
+                                        <h1 class="display-4 iq-tw-8 iq-font-purple">{{ object.nome }}</h1>
+                                    </div>
+                                    <p class="iq-tw-4 iq-mt-10 iq-mb-20">{{ object.descricao }}</p>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="iq-mtb-10"> <span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Tipo :</span> {{object.Especie}}</div>
+                                            <div class="iq-mtb-10"> <span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Nome :</span>{{object.nome}}</div>
+                                            <div class="iq-mtb-10"> <span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Categoria :</span> {{object.Categoria}}</div>
+                                            <div class="iq-mtb-10"> <span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Cadastrado em: </span> {{object.created}}</div>
+                                            <div class="iq-mtb-10"> <span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Modificado em: </span> {{object.modified}}</div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12">
+                                            <div class="iq-mtb-10"> <span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Slug :</span> {{ object.slug }}</div>
+                                            {% if object.atotado == False %}
+                                            <div class="iq-mtb-10"><span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Atotado :</span> Não</div>
+                                                {% else %}
+                                            <div class="iq-mtb-10"><span class="iq-tw-6 iq-lead iq-font-dark iq-mr-10">Atotado :</span> Sim</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <section class="overview-block-ptb iq-masonry-block popup-gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading-title text-center">
+                            <h2 class="title iq-tw-6">Portfolio da(o) {{ object.nome }}</h2>
+                            <p>{{ object.descricao }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                        {# fotos dos pets#}
+                       <div class="iq-masonry iq-columns-3">
+                        {% for p in petList %}
+                        <div class="iq-masonry-item photography">
+                                <div class="iq-portfolio-04">
+                                    <a class="iq-portfolio-img" href="#">
+                                        {% thumbnail p.imagem "800x800" crop="center" as im %}
+                                            <img class="img-fluid" src="{{ im.url }}" alt="logo">
+                                        {% endthumbnail %}
+                                    </a>
+                                    <div class="iq-overbg">
+                                        <div class="iq-portfolio-content">
+                                            <h5 class="title iq-font-white"><a href="#">Adotar</a></h5>
+                                            <hr>
+                                            <ul class="iq-portfolio-icon">
+                                                <li><a class="image-link popup-img" href="{{ p.imagem.url }}"><i class="fa fa-arrows-alt"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                       </div>
+
+                    </div>
+
+            </div>
+        </section>
+    <script src="{% static 'home/js/custom.js' %}"></script>
+     {% endblock pet%}

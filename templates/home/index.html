@@ -1,0 +1,104 @@
+{% extends 'home/Base.html' %}
+{% load static %}
+{% load thumbnail %}
+
+{% block slide %}
+    {% for slide in Slide %}
+        <li data-index="rs-{{slide.id}}" data-transition="random,fadethroughdark" data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"  data-randomtransition="on" data-easein="default,default,default" data-easeout="default,default,default" data-masterspeed="default,default,default"  data-thumb="{% static 'home/revolution/assets/100x50_a3cc1-bg-13.jpg' %}"  data-rotate="0,0,0"  data-saveperformance="off"  class="b1-video" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+            <!-- MAIN IMAGE -->
+            <img src="{{ slide.imagem.url }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+            <!-- LAYERS -->
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption   tp-resizeme"
+                 id="slide-313-layer-1"
+                 data-x="center" data-hoffset=""
+                 data-y="center" data-voffset=""
+                 data-width="['auto']"
+                 data-height="['auto']"
+                 data-type="text"
+                 data-responsive_offset="on"
+                 data-frames='[{"delay":1510,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                 data-paddingtop="[0,0,0,0]"
+                 data-paddingright="[0,0,0,0]"
+                 data-paddingbottom="[0,0,0,0]"
+                 data-paddingleft="[0,0,0,0]"
+                 style="z-index: 5; white-space: nowrap; font-size: 70px; line-height: 90px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">{{ slide.titulo }}</div>
+            <!-- LAYER NR. 2 -->
+            <a href="#iq-services" class="tp-caption button tp-resizeme"
+               id="slide-313-layer-3"
+               data-x="center" data-hoffset=""
+               data-y="center" data-voffset="142"
+               data-width="['auto']"
+               data-height="['auto']"
+               data-type="button"
+               data-responsive_offset="on"
+               data-frames='[{"delay":3450,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":""}]'
+               data-textAlign="['inherit','inherit','inherit','inherit']"
+               data-paddingtop="[12,12,12,12]"
+               data-paddingright="[35,35,35,35]"
+               data-paddingbottom="[12,12,12,12]"
+               data-paddingleft="[35,35,35,35]"
+               style="z-index: 6; box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Services</a>
+            <!-- LAYER NR. 3 -->
+            <div class="tp-caption   tp-resizeme"
+                 id="slide-313-layer-30"
+                 data-x="center" data-hoffset=""
+                 data-y="center" data-voffset="80"
+                 data-width="['auto']"
+                 data-height="['auto']"
+                 data-type="text"
+                 data-responsive_offset="on"
+                 data-frames='[{"delay":2800,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                 data-textAlign="['inherit','inherit','inherit','inherit']"
+                 data-paddingtop="[0,0,0,0]"
+                 data-paddingright="[0,0,0,0]"
+                 data-paddingbottom="[0,0,0,0]"
+                 data-paddingleft="[0,0,0,0]"
+                 style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">{{ slide.descricao }}</div>
+        </li>
+    {% endfor %}
+{% endblock slide %}
+
+{% block LogoParceiro %}
+    {% for logo in logos  %}
+        <div class="item"> <img class="img-fluid center-block imglogo " src="{{ logo.imagem.url }}" alt="#"></div>
+    {% endfor %}
+{% endblock LogoParceiro %}
+
+{% block parceiros %}
+    <section class="overview-block-pt iq-pb-20 iq-over-black-70 iq-bg jarallax" style="background-image: url({% static 'home/images/bg/PetsListBanner.jpg' %}); background-position: left center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="heading-title text-center">
+                        <h2 class="title iq-tw-6 iq-font-white">Nossos Parceiros</h2>
+                        <div class=" iq-font-white">Lorem Ipsum is simply dummy text ever sincehar the 1500s, when an unknownshil printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row iq-mb-30 iq-mt-60">
+                <div class="col-sm-12">
+                    <div class="owl-carousel arrow-4 popup-gallery" data-autoplay="true" data-loop="true" data-nav="true" data-dots="false" data-items="4" data-items-laptop="4" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1" data-margin="15">
+                        {% for parceiro in parceiros %}
+                        <div class="item">
+                            <div class="text-center">
+                                <a href="{{ parceiro.imagem.url }}" class="popup-img">
+                                     {% thumbnail parceiro.imagem "370x261" crop="center" as im %}
+                                        <img class="wd-full popup-img" src="{{ im.url }}" alt="#">
+                                    {% endthumbnail %}
+                                </a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock parceiros %}
+
+
+

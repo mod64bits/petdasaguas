@@ -1,0 +1,640 @@
+{% load static %}
+{% load thumbnail %}
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Pet das Águas | Amor aos Animais</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}" />
+    <!-- bootstrap -->
+    <link href="{% static 'home/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- font awesome -->
+    <link href="{% static 'home/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- ionicons icon -->
+    <link href="{% static 'home/css/ionicons.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- mega menu -->
+    <link href="{% static 'home/css/mega-menu/mega_menu.css' %}" rel="stylesheet" type="text/css" />
+    <!-- owl-carousel -->
+    <link href="{% static 'home/css/owl-carousel/owl.carousel.css' %}" rel="stylesheet" type="text/css" />
+    <!-- magnific popup -->
+    <link href="{% static 'home/css/magnific-popup.css' %}" rel="stylesheet" type="text/css" />
+    <!-- animate -->
+    <link href="{% static 'home/css/animate.css' %}" rel="stylesheet" type="text/css" />
+    <!-- media element player -->
+    <link href="{% static 'home/css/mediaelementplayer.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link href="{% static 'home/revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
+    <!-- ADD-ONS CSS FILES -->
+    <link href="{% static 'home/revolution/css/revolution.addon.particles.css' %}" rel="stylesheet" type="text/css">
+    <!-- shortcodes -->
+    <link href="{% static 'home/css/shortcodes.css' %}" rel="stylesheet" type="text/css" />
+    <!-- main style -->
+    <link href="{% static 'home/css/style.css' %}" rel="stylesheet" type="text/css" />
+    <!-- responsive -->
+    <link href="{% static 'home/css/responsive.css' %}" rel="stylesheet" type="text/css" />
+    <!-- custom -->
+    <link href="{% static 'home/css/custom.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Style customizer (Remove these two lines please) -->
+    <link rel="stylesheet" href="{% static 'home/css/color/color-1.css' %}" data-style="styles">
+    <link rel="stylesheet" href="{% static 'home/css/veterinarios.css' %}" data-style="styles">
+
+</head>
+<body class="iq-law">
+<!-- loading -->
+<div id="loading">
+    <div id="loading-center">
+        <img src="{% static 'home/images/loader.png' %}" alt="loder">
+    </div>
+</div>
+<!-- loading End -->
+<!-- HEADER  -->
+<header class="dark-transparent">
+    <!-- menu start -->
+    <nav id="menu-1" class="mega-menu">
+        <!-- menu list items container -->
+        {% include 'home/menu.html' %}
+    </nav>
+</header>
+<!-- /HEADER END -->
+<!--=================================
+   Banner -->
+<div id="iq-home">
+    <div id="rev_slider_102_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+        <!-- START REVOLUTION SLIDER 5.4.7.4 fullwidth mode -->
+        <div id="rev_slider_102_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7.4">
+            <ul>
+                <!-- SLIDE  -->
+                {% block slide %}
+                    <li data-index="rs-313" data-transition="random,fadethroughdark" data-slotamount="default,default,default" data-hideafterloop="0" data-hideslideonmobile="off"  data-randomtransition="on" data-easein="default,default,default" data-easeout="default,default,default" data-masterspeed="default,default,default"  data-thumb="{% static 'home/revolution/assets/100x50_a3cc1-bg-13.jpg' %}"  data-rotate="0,0,0"  data-saveperformance="off"  class="b1-video" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static 'home/revolution/assets/a3cc1-bg-13.jpg' %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-313-layer-1"
+                             data-x="center" data-hoffset=""
+                             data-y="center" data-voffset=""
+                             data-width="['auto']"
+                             data-height="['auto']"
+                             data-type="text"
+                             data-responsive_offset="on"
+                             data-frames='[{"delay":1510,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']"
+                             data-paddingtop="[0,0,0,0]"
+                             data-paddingright="[0,0,0,0]"
+                             data-paddingbottom="[0,0,0,0]"
+                             data-paddingleft="[0,0,0,0]"
+                             style="z-index: 5; white-space: nowrap; font-size: 70px; line-height: 90px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Raleway;">Beyond the Imagination </div>
+                        <!-- LAYER NR. 2 -->
+                        <a href="#iq-services" class="tp-caption button tp-resizeme"
+                           id="slide-313-layer-3"
+                           data-x="center" data-hoffset=""
+                           data-y="center" data-voffset="142"
+                           data-width="['auto']"
+                           data-height="['auto']"
+                           data-type="button"
+                           data-responsive_offset="on"
+                           data-frames='[{"delay":3450,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":""}]'
+                           data-textAlign="['inherit','inherit','inherit','inherit']"
+                           data-paddingtop="[12,12,12,12]"
+                           data-paddingright="[35,35,35,35]"
+                           data-paddingbottom="[12,12,12,12]"
+                           data-paddingleft="[35,35,35,35]"
+                           style="z-index: 6; box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">Services</a>
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption   tp-resizeme"
+                             id="slide-313-layer-30"
+                             data-x="center" data-hoffset=""
+                             data-y="center" data-voffset="80"
+                             data-width="['auto']"
+                             data-height="['auto']"
+                             data-type="text"
+                             data-responsive_offset="on"
+                             data-frames='[{"delay":2800,"speed":1000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['inherit','inherit','inherit','inherit']"
+                             data-paddingtop="[0,0,0,0]"
+                             data-paddingright="[0,0,0,0]"
+                             data-paddingbottom="[0,0,0,0]"
+                             data-paddingleft="[0,0,0,0]"
+                             style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Open Sans;">Beautiful thing don't ask for attention </div>
+                    </li>
+                {% endblock slide %}
+                <!-- SLIDE  -->
+            </ul>
+            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+        </div>
+    </div>
+</div>
+<!--=================================
+   Banner -->
+<!--=================================
+   MAIN CONTENT -->
+{% block parceiros %}
+<div class="main-content">
+    <div class="overview-block-pt iq-pb-20 iq-over-black-70 iq-bg jarallax" style="background-image: url({% static 'home/images/bg/gatosPety.jpg'%}); background-position: left center;">
+        <div class="container-fluid">
+            <div class="row iq-mb-30 iq-mt-60">
+                <div class="col-sm-12">
+                    <div class="owl-carousel arrow-4 popup-gallery" data-autoplay="true" data-loop="true" data-nav="true" data-dots="false" data-items="4" data-items-laptop="4" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1" data-margin="15">
+
+                            <div class="item">
+                                <div class="text-center">
+                                    <a href="{% static 'home/images/certificate/1.jpg' %}" class="popup-img">
+                                        <img class="wd-full popup-img" src="{% static 'home/images/certificate/1.jpg' %}" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock parceiros %}
+
+<section class="iq-about overview-block-pt grey-bg">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-lg-7 col-md-12">
+                <div class="about-content iq-mb-80">
+                    <h1 class="text-about iq-tw-6">Sobre <span class="iq-font-green iq-fw-8"> O PET</span> das Águas</h1>
+                    <p class="iq-mt-20">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p class="typo-style1">Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="iq-mt-20">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 iq-about-img">
+                <img class="img-fluid center-block" src="{% static 'home/images/about-us/15.png' %}" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="iq-team" class="iq-team1 overview-block-ptb grey-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="heading-title text-center">
+                    <h2 class="title iq-tw-6">Meet Our Attorneys</h2>
+                    <p>Lorem Ipsum is simply dummy text ever sincehar the 1500s, when an unknownshil printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="owl-carousel arrow-4" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="3" data-items-laptop="3" data-items-tab="2" data-items-mobile="1" data-items-mobile-sm="1" data-margin="15">
+                    <div class="item">
+                        <div class="iq-team6">
+                            <div class="team-blog mb-30">
+                                <div class="team-images"> <img class="img-fluid wd-full" src="{% static 'home/images/team/trainer2.jpg' %}" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="line"></div>
+                                    <h5 class="iq-tw-6 iq-mt-10"><a href="javascript:void(0)">Rinks Cooper</a></h5>
+                                    <p>CEO, Qwilo</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iq-team6">
+                            <div class="team-blog mb-30">
+                                <div class="team-images"> <img class="img-fluid wd-full" src="{% static 'home/images/team/trainer1.jpg' %}" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="line"></div>
+                                    <h5 class="iq-tw-6 iq-mt-10"><a href="javascript:void(0)">Haris Morgan</a></h5>
+                                    <p>CEO, Qwilo</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iq-team6">
+                            <div class="team-blog mb-30">
+                                <div class="team-images"> <img class="img-fluid wd-full" src="{% static 'home/images/team/trainer3.jpg' %}" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="line"></div>
+                                    <h5 class="iq-tw-6 iq-mt-10"><a href="javascript:void(0)">JD Scot</a></h5>
+                                    <p>CEO, Qwilo</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iq-team6">
+                            <div class="team-blog mb-30">
+                                <div class="team-images"> <img class="img-fluid wd-full" src="{% static 'home/images/team/trainer2.jpg' %}" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="line"></div>
+                                    <h5 class="iq-tw-6 iq-mt-10"><a href="javascript:void(0)">Rinks Cooper</a></h5>
+                                    <p>CEO, Qwilo</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iq-team6">
+                            <div class="team-blog mb-30">
+                                <div class="team-images"> <img class="img-fluid wd-full" src="{% static 'home/images/team/trainer1.jpg' %}" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="line"></div>
+                                    <h5 class="iq-tw-6 iq-mt-10"><a href="javascript:void(0)">Haris Morgan</a></h5>
+                                    <p>CEO, Qwilo</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="iq-team6">
+                            <div class="team-blog mb-30">
+                                <div class="team-images"> <img class="img-fluid wd-full" src="{% static 'home/images/team/trainer3.jpg' %}" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="line"></div>
+                                    <h5 class="iq-tw-6 iq-mt-10"><a href="javascript:void(0)">JD Scot</a></h5>
+                                    <p>CEO, Qwilo</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                            <li> <a href="javascript:void(0)"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=================================
+   Our Team -->
+<!--=================================
+   Counter and feedback-->
+
+<!--=================================
+   Counter and feedback -->
+<!--=================================
+   Blog -->
+<!--  Quando e se tiver Blog
+    <section id="iq-blog" class="iq-blog overview-block-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="heading-title text-center">
+                        <h2 class="title iq-tw-6">Our Recent Blog</h2>
+                        <p>Lorem Ipsum is simply dummy text ever sincehar the 1500s, when an unknownshil printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="iq-blog-entry white-bg">
+                        <div class="iq-entry-image clearfix">
+                            <img class="img-fluid" src="{% static 'home/images/blog/02.jpg' %}" alt="#">
+                            <span class="tag"><i class="ion-image"></i>Photos</span>
+                            <span class="date">12<small>Aug</small></span>
+                        </div>
+                        <div class="iq-blog-detail">
+                            <div class="iq-entry-title iq-mb-10">
+                                <a href="javascript:void(0)">
+                                    <h5 class="iq-tw-6">Blogpost With Image</h5>
+                                </a>
+                            </div>
+                            <div class="iq-entry-content">
+                                <p>Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. hic perspiciatis.</p>
+                            </div>
+                            <ul class="iq-entry-meta iq-mt-10">
+                                <li><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> Qwilo</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-heart" aria-hidden="true"></i> 6 like</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-comments" aria-hidden="true"></i> 9 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 iq-re-9-mt50">
+                    <div class="iq-blog-entry white-bg">
+                        <div class="iq-entry-image clearfix">
+                            <img class="img-fluid" src="{% static 'home/images/blog/03.jpg' %}" alt="#">
+                            <span class="tag"><i class="ion-image"></i>Photos</span>
+                            <span class="date">12<small>Aug</small></span>
+                        </div>
+                        <div class="iq-blog-detail">
+                            <div class="iq-entry-title iq-mb-10">
+                                <a href="javascript:void(0)">
+                                    <h5 class="iq-tw-6">Blogpost With Image</h5>
+                                </a>
+                            </div>
+                            <div class="iq-entry-content">
+                                <p>Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. hic perspiciatis.</p>
+                            </div>
+                            <ul class="iq-entry-meta iq-mt-10">
+                                <li><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> Qwilo</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-heart" aria-hidden="true"></i> 6 like</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-comments" aria-hidden="true"></i> 9 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 iq-re-9-mt50">
+                    <div class="iq-blog-entry white-bg">
+                        <div class="iq-entry-image clearfix">
+                            <img class="img-fluid" src="{% static 'home/images/blog/04.jpg' %}" alt="#">
+                            <span class="tag"><i class="ion-image"></i>Photos</span>
+                            <span class="date">12<small>Aug</small></span>
+                        </div>
+                        <div class="iq-blog-detail">
+                            <div class="iq-entry-title iq-mb-10">
+                                <a href="javascript:void(0)">
+                                    <h5 class="iq-tw-6">Blogpost With Image</h5>
+                                </a>
+                            </div>
+                            <div class="iq-entry-content">
+                                <p>Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. hic perspiciatis.</p>
+                            </div>
+                            <ul class="iq-entry-meta iq-mt-10">
+                                <li><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> Qwilo</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-heart" aria-hidden="true"></i> 6 like</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-comments" aria-hidden="true"></i> 9 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+<!--=================================
+   Blog -->
+<!--=================================
+   Action Box -->
+<section class="iq-action-blog green-bg iq-ptb-40 particles-bg">
+    <canvas id="canvas"></canvas>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-10 col-md-9 col-sm-12">
+                <h3 class="iq-font-white iq-mb-10 iq-fw-4">Faça uma <b>Doação</b> Para Apoiar o PET das Águas</h3>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12 text-right"><a target="_blank" href="https://themeforest.net/checkout/42519725/create_account" class="button white grey iq-mr-0 iq-re-4-mt30">Apoiar Agora!</a> </div>
+        </div>
+    </div>
+</section>
+<!--=================================
+   Action Box -->
+</div>
+<!--=================================
+   Main Content -->
+<!--=================================
+   Footer -->
+{% include 'home/footer.html' %}
+<!--=================================
+   Footer -->
+<!--=================================
+  Login -->
+<div class="modal fade iq-login-from" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <a class="close" data-dismiss="modal" aria-label="Close">
+                    <span  aria-hidden="true">&times; </span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="pill" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register-tab" data-toggle="pill" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content iq-mt-50" id="pills-tabContent1">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="text" class="form-control" id="exampleInputLastName" placeholder="Last Name">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="forgot-password text-right">
+                                        <a href="javascript:void(0)" class="iq-tw-6">Forgot Password</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="button iq-mt-30">Sign in
+                            </button>
+                        </form>
+                        <hr class="iq-mtb-20">
+                        <div class="text-center">
+                            <div class="iq-tw-6">Don't Have an Account? <a href="javascript:void(0)" class="iq-link iq-tw-6">Register Now</a></div>
+                            <div class="iq-social">
+                                <ul class="iq-media-blog">
+                                    <li><a href="# "><i class="fa fa-twitter "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-google "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-github "></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputFirst" placeholder="First Name">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="text" class="form-control" id="exampleInputLast" placeholder="Last Name">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="text" class="form-control" id="exampleInputmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="password" class="form-control" id="exampleInputPw" placeholder="Password">
+                            </div>
+                            <button type="submit" class="button iq-mt-20">Sign Up</button>
+                        </form>
+                        <hr class="iq-mtb-20">
+                        <div class="text-center">
+                            <div class="iq-tw-6">Already Have an Account?<a href="javascript:void(0)" class="iq-link iq-tw-6"> Login</a></div>
+                            <div class="iq-social">
+                                <ul class="iq-media-blog">
+                                    <li><a href="# "><i class="fa fa-twitter "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-google "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-github "></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=================================
+   Login -->
+<!-- back-to-top -->
+<div id="back-to-top">
+    <a class="top" id="top" href="#top"> <i class="ion-ios-upload-outline"></i> </a>
+</div>
+<!-- back-to-top End -->
+
+<!--================ Jquery =================-->
+<!-- Jquery  -->
+<script src="{% static 'home/js/jquery.min.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'home/js/popper.min.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<!-- Google captcha code Js -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Mega Menu -->
+<script src="{% static 'home/js/mega-menu/mega_menu.js' %}"></script>
+<!-- Main -->
+<script src="{% static 'home/js/main.js' %}"></script>
+<!-- ADD-ONS JS FILES -->
+<script src="{% static 'home/revolution/js/revolution.addon.particles.min.js' %}"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="{% static 'home/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+<!-- Custom -->
+<script src="{% static 'home/js/custom.js' %}"></script>
+<script>
+    var revapi102,
+        tpj;
+    (function() {
+        if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+
+        function onLoad() {
+            if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+            if(tpj("#rev_slider_102_1").revolution == undefined){
+                revslider_showDoubleJqueryError("#rev_slider_102_1");
+            }else{
+                revapi102 = tpj("#rev_slider_102_1").show().revolution({
+                    sliderType:"standard",
+                    jsFileLocation:"//localhost/revslider-standalone/revslider/public/assets/js/",
+                    sliderLayout:"fullwidth",
+                    dottedOverlay:"none",
+                    delay:9000,
+                    navigation: {
+                        keyboardNavigation:"off",
+                        keyboard_direction: "vertical",
+                        mouseScrollNavigation:"off",
+                        mouseScrollReverse:"reverse",
+                        onHoverStop:"off",
+                        arrows: {
+                            style:"hades",
+                            enable:true,
+                            hide_onmobile:false,
+                            hide_onleave:false,
+                            tmp:'<div class="tp-arr-allwrapper">    <div class="tp-arr-imgholder"></div></div>',
+                            left: {
+                                h_align:"left",
+                                v_align:"center",
+                                h_offset:20,
+                                v_offset:0
+                            },
+                            right: {
+                                h_align:"right",
+                                v_align:"center",
+                                h_offset:20,
+                                v_offset:0
+                            }
+                        }
+                    },
+                    visibilityLevels:[1240,1024,778,480],
+                    gridwidth:1170,
+                    gridheight:790,
+                    lazyType:"none",
+                    shadow:0,
+                    spinner:"spinner0",
+                    stopLoop:"off",
+                    stopAfterLoops:-1,
+                    stopAtSlide:-1,
+                    shuffle:"off",
+                    autoHeight:"off",
+                    disableProgressBar:"on",
+                    hideThumbsOnMobile:"off",
+                    hideSliderAtLimit:0,
+                    hideCaptionAtLimit:0,
+                    hideAllCaptionAtLilmit:0,
+                    debugMode:false,
+                    fallbacks: {
+                        simplifyAll:"off",
+                        nextSlideOnWindowFocus:"off",
+                        disableFocusListener:false,
+                    }
+                });
+            }; /* END OF revapi call */
+        }; /* END OF ON LOAD FUNCTION */
+    }()); /* END OF WRAPPING FUNCTION */
+</script>
+</body>
+</html>

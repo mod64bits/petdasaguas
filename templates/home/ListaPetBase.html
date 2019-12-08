@@ -1,0 +1,381 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <title>Pet das Águas | Amor aos Animais</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}" />
+    <!-- bootstrap -->
+    <link href="{% static 'home/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- font awesome -->
+    <link href="{% static 'home/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- ionicons icon -->
+    <link href="{% static 'home/css/ionicons.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- mega menu -->
+    <link href="{% static 'home/css/mega-menu/mega_menu.css' %}" rel="stylesheet" type="text/css" />
+    <!-- owl-carousel -->
+    <link href="{% static 'home/css/owl-carousel/owl.carousel.css' %}" rel="stylesheet" type="text/css" />
+    <!-- magnific popup -->
+    <link href="{% static 'home/css/magnific-popup.css' %}" rel="stylesheet" type="text/css" />
+    <!-- animate -->
+    <link href="{% static 'home/css/animate.css' %}" rel="stylesheet" type="text/css" />
+    <!-- media element player -->
+    <link href="{% static 'home/css/mediaelementplayer.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link href="{% static 'home/revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
+    <!-- ADD-ONS CSS FILES -->
+    <link href="{% static 'home/revolution/css/revolution.addon.particles.css' %}" rel="stylesheet" type="text/css">
+    <!-- shortcodes -->
+    <link href="{% static 'home/css/shortcodes.css' %}" rel="stylesheet" type="text/css" />
+    <!-- main style -->
+    <link href="{% static 'home/css/style.css' %}" rel="stylesheet" type="text/css" />
+    <!-- responsive -->
+    <link href="{% static 'home/css/responsive.css' %}" rel="stylesheet" type="text/css" />
+    <!-- custom -->
+    <link href="{% static 'home/css/custom.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Style customizer (Remove these two lines please) -->
+    <link rel="stylesheet" href="{% static 'home/css/color/color-1.css' %}" data-style="styles">
+    <link rel="stylesheet" href="{% static 'home/css/veterinarios.css' %}" data-style="styles">
+
+</head>
+<body class="iq-law">
+<!-- loading -->
+<div id="loading">
+    <div id="loading-center">
+        <img src="{% static 'home/images/loader.png' %}" alt="loder">
+    </div>
+</div>
+<!-- loading End -->
+<!-- HEADER  -->
+
+<header class="dark-transparent">
+     <div class="topbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="topbar-left">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><i class="fa fa-phone text-blue"></i> +0123 456 789</li>
+                                <li class="list-inline-item"><i class="fa fa-envelope-o"> </i> support@Qwilo.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="topbar-right text-right">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <ul class="list-inline iq-left">
+                                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target=".iq-login-from" data-whatever="@mdo"><i class="fa fa-lock"></i>Login</a></li>
+                                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target=".iq-register-from" data-whatever="@fat"><i class="fa fa-user"></i>Register</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-inline-item"><a href="#"><i class="fa fa-comments-o"></i>Free Consulting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- menu start -->
+    <nav id="menu-1" class="mega-menu">
+        <!-- menu list items container -->
+        {% include 'home/menu.html' %}
+    </nav>
+</header>
+<section class="overview-block-ptb iq-over-black-70 jarallax iq-breadcrumb3 text-left iq-font-white" style="background-image: url({% static 'home/images/bg/PetsListBanner.jpg' %}); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="iq-mb-0">
+                        <h2 class="text-uppercase iq-font-white iq-tw-6">Lista de Pets Para Adoção</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <nav aria-label="breadcrumb" class="text-right">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="home-1.html"><i class="ion-android-home"></i> Home</a></li>
+                            <li class="breadcrumb-item"><a href="home-1.html">Pet</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Todos Os Pets</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="main-content">
+
+{% block pet%}
+    <section id="iq-blog" class="iq-blog overview-block-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="heading-title text-center">
+                        <h2 class="title iq-tw-6">Our Recent Blog</h2>
+                        <p>Lorem Ipsum is simply dummy text ever sincehar the 1500s, when an unknownshil printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 iq-re-9-mt50">
+                    <div class="iq-blog-entry white-bg">
+                        <div class="iq-entry-image clearfix">
+                            <img class="img-fluid" src="{% static 'home/images/blog/02.jpg' %}" alt="#">
+                            <span class="tag"><i class="ion-image"></i>Photos</span>
+                            <span class="date">12<small>Aug</small></span>
+                        </div>
+                        <div class="iq-blog-detail">
+                            <div class="iq-entry-title iq-mb-10">
+                                <a href="javascript:void(0)">
+                                    <h5 class="iq-tw-6">Blogpost With Image</h5>
+                                </a>
+                            </div>
+                            <div class="iq-entry-content">
+                                <p>Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet, consectetur adipisicing elit. hic perspiciatis.</p>
+                            </div>
+                            <ul class="iq-entry-meta iq-mt-10">
+                                <li><a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> Qwilo</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-heart" aria-hidden="true"></i> 6 like</a></li>
+                                <li><a href="javascript:void(0)"><i class="fa fa-comments" aria-hidden="true"></i> 9 comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock pet %}
+    <!--=================================
+       Blog -->
+    <!--=================================
+       Action Box -->
+    <section class="iq-action-blog green-bg iq-ptb-40 particles-bg">
+        <canvas id="canvas"></canvas>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-md-9 col-sm-12">
+                    <h3 class="iq-font-white iq-mb-10 iq-fw-4">Faça uma <b>Doação</b> Para Apoiar o PET das Águas</h3>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text-right"><a target="_blank" href="https://themeforest.net/checkout/42519725/create_account" class="button white grey iq-mr-0 iq-re-4-mt30">Apoiar Agora!</a> </div>
+            </div>
+        </div>
+    </section>
+    <!--=================================
+       Action Box -->
+</div>
+<!--=================================
+   Main Content -->
+<!--=================================
+   Footer -->
+{% include 'home/footer.html' %}
+<!--=================================
+   Footer -->
+<!--=================================
+  Login -->
+<div class="modal fade iq-login-from" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <a class="close" data-dismiss="modal" aria-label="Close">
+                    <span  aria-hidden="true">&times; </span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="pill" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register-tab" data-toggle="pill" href="#register" role="tab" aria-controls="register" aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content iq-mt-50" id="pills-tabContent1">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="text" class="form-control" id="exampleInputLastName" placeholder="Last Name">
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="forgot-password text-right">
+                                        <a href="javascript:void(0)" class="iq-tw-6">Forgot Password</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="button iq-mt-30">Sign in
+                            </button>
+                        </form>
+                        <hr class="iq-mtb-20">
+                        <div class="text-center">
+                            <div class="iq-tw-6">Don't Have an Account? <a href="javascript:void(0)" class="iq-link iq-tw-6">Register Now</a></div>
+                            <div class="iq-social">
+                                <ul class="iq-media-blog">
+                                    <li><a href="# "><i class="fa fa-twitter "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-google "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-github "></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputFirst" placeholder="First Name">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="text" class="form-control" id="exampleInputLast" placeholder="Last Name">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="text" class="form-control" id="exampleInputmail1" placeholder="Email">
+                            </div>
+                            <div class="form-group iq-mt-20">
+                                <input type="password" class="form-control" id="exampleInputPw" placeholder="Password">
+                            </div>
+                            <button type="submit" class="button iq-mt-20">Sign Up</button>
+                        </form>
+                        <hr class="iq-mtb-20">
+                        <div class="text-center">
+                            <div class="iq-tw-6">Already Have an Account?<a href="javascript:void(0)" class="iq-link iq-tw-6"> Login</a></div>
+                            <div class="iq-social">
+                                <ul class="iq-media-blog">
+                                    <li><a href="# "><i class="fa fa-twitter "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-google "></i></a></li>
+                                    <li><a href="# "><i class="fa fa-github "></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=================================
+   Login -->
+<!-- back-to-top -->
+<div id="back-to-top">
+    <a class="top" id="top" href="#top"> <i class="ion-ios-upload-outline"></i> </a>
+</div>
+<!-- back-to-top End -->
+
+<!--================ Jquery =================-->
+<!-- Jquery  -->
+<script src="{% static 'home/js/jquery.min.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'home/js/popper.min.js' %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+<!-- Google captcha code Js -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- Mega Menu -->
+<script src="{% static 'home/js/mega-menu/mega_menu.js' %}"></script>
+<!-- Main -->
+<script src="{% static 'home/js/main.js' %}"></script>
+<!-- ADD-ONS JS FILES -->
+<script src="{% static 'home/revolution/js/revolution.addon.particles.min.js' %}"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="{% static 'home/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'home/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+
+
+<!-- Custom -->
+<script src="{% static 'home/js/custom.js' %}"></script>
+<script>
+    var revapi102,
+        tpj;
+    (function() {
+        if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+
+        function onLoad() {
+            if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+            if(tpj("#rev_slider_102_1").revolution == undefined){
+                revslider_showDoubleJqueryError("#rev_slider_102_1");
+            }else{
+                revapi102 = tpj("#rev_slider_102_1").show().revolution({
+                    sliderType:"standard",
+                    jsFileLocation:"//localhost/revslider-standalone/revslider/public/assets/js/",
+                    sliderLayout:"fullwidth",
+                    dottedOverlay:"none",
+                    delay:9000,
+                    navigation: {
+                        keyboardNavigation:"off",
+                        keyboard_direction: "vertical",
+                        mouseScrollNavigation:"off",
+                        mouseScrollReverse:"reverse",
+                        onHoverStop:"off",
+                        arrows: {
+                            style:"hades",
+                            enable:true,
+                            hide_onmobile:false,
+                            hide_onleave:false,
+                            tmp:'<div class="tp-arr-allwrapper">    <div class="tp-arr-imgholder"></div></div>',
+                            left: {
+                                h_align:"left",
+                                v_align:"center",
+                                h_offset:20,
+                                v_offset:0
+                            },
+                            right: {
+                                h_align:"right",
+                                v_align:"center",
+                                h_offset:20,
+                                v_offset:0
+                            }
+                        }
+                    },
+                    visibilityLevels:[1240,1024,778,480],
+                    gridwidth:1170,
+                    gridheight:790,
+                    lazyType:"none",
+                    shadow:0,
+                    spinner:"spinner0",
+                    stopLoop:"off",
+                    stopAfterLoops:-1,
+                    stopAtSlide:-1,
+                    shuffle:"off",
+                    autoHeight:"off",
+                    disableProgressBar:"on",
+                    hideThumbsOnMobile:"off",
+                    hideSliderAtLimit:0,
+                    hideCaptionAtLimit:0,
+                    hideAllCaptionAtLilmit:0,
+                    debugMode:false,
+                    fallbacks: {
+                        simplifyAll:"off",
+                        nextSlideOnWindowFocus:"off",
+                        disableFocusListener:false,
+                    }
+                });
+            }; /* END OF revapi call */
+        }; /* END OF ON LOAD FUNCTION */
+    }()); /* END OF WRAPPING FUNCTION */
+</script>
+</body>
+</html>
