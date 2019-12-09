@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-from .models import Parceiros, Slider, VeterianrioLogo, ConfiguracoesSite
+from .models import Parceiros, Slider, VeterianriosPrceiros, ConfiguracoesSite
 
 
 class HomeView(TemplateView):
@@ -10,7 +10,7 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['parceiros'] = Parceiros.objects.all()
         context['Slide'] = Slider.objects.all()
-        context['logos'] = VeterianrioLogo.objects.all()
+        context['veterinarios'] = VeterianriosPrceiros.objects.all()
         context['configuracoesSite'] = ConfiguracoesSite.objects.all()
         return context
 

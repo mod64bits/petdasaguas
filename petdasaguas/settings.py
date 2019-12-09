@@ -73,7 +73,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 # configuracoes de telefone etc do site
-                'apps.core.context_processors.configuracoes',
+                #'apps.core.context_processors.configuracoes',
             ],
         },
     },

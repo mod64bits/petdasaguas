@@ -7,7 +7,7 @@ class Parceiros(models.Model):
     descricao = models.TextField('Descrição Parceiro')
     telefone = PhoneNumberField(region="BR", null=True, blank=True)
     site = models.URLField('Site', null=True, blank=True)
-    imagem = models.ImageField('Foto', upload_to='adocao', help_text='Selecione uma Foto')
+    imagem = models.ImageField('Foto', upload_to='parceiros', help_text='Selecione uma Foto')
     created = models.DateTimeField('Criado em', auto_now_add=True)
     modified = models.DateTimeField('Modificado em', auto_now=True)
 
@@ -36,15 +36,20 @@ class Slider(models.Model):
         return self.titulo
 
 
-class VeterianrioLogo(models.Model):
+class VeterianriosPrceiros(models.Model):
     nome = models.CharField('Nome', max_length=50, help_text='Nome da Clinica')
     imagem = models.ImageField('Imagem', upload_to='veterianioParceiro', help_text='Selecione uma Foto de Boa Qualidade')
+    telefone = PhoneNumberField(region="BR", blank=True, null=True)
+    facebook = models.URLField('Link  Facebook ',  max_length=200, null=True, blank=True)
+    twitter = models.URLField('Link Twitter  ', max_length=200, null=True, blank=True)
+    site = models.URLField('Link site  ', max_length=200, null=True, blank=True)
+    instagram = models.URLField('Link instagram  ', max_length=200, null=True, blank=True)
     created = models.DateTimeField('Criado em', auto_now_add=True)
     modified = models.DateTimeField('Modificado em', auto_now=True)
 
     class Meta:
-        verbose_name = 'Veterianrio Logo'
-        verbose_name_plural = 'Veterianrio Logos'
+        verbose_name = 'Veterianrio Parceiro'
+        verbose_name_plural = 'Veterianrios Parceiros'
         ordering = ['nome']
 
     def __str__(self):

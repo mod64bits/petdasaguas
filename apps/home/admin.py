@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Parceiros, Slider, VeterianrioLogo, ConfiguracoesSite
+from .models import Parceiros, Slider, VeterianriosPrceiros, ConfiguracoesSite
 
 
 class ParceirosAdmin(admin.ModelAdmin):
@@ -30,4 +30,4 @@ class ConfiguracoesSiteAdmin(admin.ModelAdmin):
 admin.site.register(Parceiros, ParceirosAdmin)
 admin.site.register(ConfiguracoesSite, ConfiguracoesSiteAdmin)
 admin.site.register(Slider, SliderAdmin)
-admin.site.register(VeterianrioLogo, VeterianrioLogoAdmin)
+admin.site.register(VeterianriosPrceiros, VeterianrioLogoAdmin)

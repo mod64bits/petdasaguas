@@ -88,7 +88,7 @@
                                 <a href="{{ parceiro.imagem.url }}" class="popup-img">
                                      {% thumbnail parceiro.imagem "370x261" crop="center" as im %}
                                         <img class="wd-full popup-img" src="{{ im.url }}" alt="#">
-                                    {% endthumbnail %}
+                                     {% endthumbnail %}
                                 </a>
                             </div>
                         </div>
@@ -99,6 +99,50 @@
         </div>
     </section>
 {% endblock parceiros %}
+
+{% block veterinarios %}
+    {% for vet in veterinarios %}
+      <div class="item">
+                        <div class="iq-team6">
+                            <div class="team-blog mb-30">
+                                {% thumbnail vet.imagem "440x543" crop="center" as im %}
+                                <div class="team-images"> <img class="img-fluid wd-full" src="{{ im.url }}" alt=""> </div>
+                                {% endthumbnail %}
+                                <div class="team-description">
+                                    <div class="line"></div>
+                                    <h5 class="iq-tw-6 iq-mt-10"><a href="javascript:void(0)">{{ vet.nome }}</a></h5>
+                                    <p>{{ vet.telefone }}</p>
+                                    <div class="team-social">
+                                        <ul>
+                                            {% if vet.facebook %}
+                                            <li> <a href="{{ vet.facebook }}"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            {% else %}
+                                            <li> <a href="#"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                            {% endif %}
+
+                                            {% if vet.twitter %}
+                                            <li> <a href="{{ vet.twitter }}"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            {% else %}
+                                            <li> <a href="#"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                            {% endif %}
+                                        {% if vet.site %}
+                                            <li> <a href="{{ vet.site }}"> <i class="ion-social-chrome-outline"></i> </a> </li>
+                                        {% else %}
+                                            <li> <a href="#"> <i class="ion-social-chrome-outline"></i> </a> </li>
+                                        {% endif %}
+                                        {% if vet.instagram %}
+                                            <li> <a href="{{vet.instagram}}"> <i class="ion-social-instagram-outline"></i> </a> </li>
+                                        {% else %}
+                                            <li> <a href="#"> <i class="ion-social-instagram-outline"></i> </a> </li>
+                                        {% endif %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    {% endfor %}
+{% endblock veterinarios %}
 
 
 
